@@ -1,11 +1,17 @@
 #include "../Visitors/Visitor.h"
 
-
+namespace Articles
+{
 class Article 
 {
-    private:
+    protected:
         int id;
+        float weight;
     public :
-        void accept(Visitor& visitor);
+        Article() = default;
+        Article(int id, float weight);
+        ~Article();
+        virtual void accept(Visitor& visitor) = 0;
 
-};
+};  
+} // namespace Articles
