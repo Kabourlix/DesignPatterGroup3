@@ -1,7 +1,7 @@
 #include "../Articles/Article.h"
 
 
-class  Visitor{
+class  BuyVisitor{
     public:
         virtual void visit(Article& article) = 0;
         virtual void weightArticle(Fruit& fruit) = 0;

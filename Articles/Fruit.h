@@ -1,4 +1,4 @@
-#include "../Visitors/Visitor.h"
+#include "../Visitors/BuyVisitor.h"
 
 namespace Articles{
 
@@ -7,7 +7,6 @@ namespace Articles{
             int weight;
         public:
             Fruit(int id, int weight);
-            virtual void accept(Visitor& visitor) override;
     };
 }
 

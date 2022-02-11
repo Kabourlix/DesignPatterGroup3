@@ -1,4 +1,4 @@
-#include "../Visitors/Visitor.h"
+#include "../Visitors/BuyVisitor.h"
 
 namespace Articles
 {
@@ -6,12 +6,11 @@ class Article
 {
     protected:
         int id;
-        float weight;
     public :
         Article() = default;
-        Article(int id, float weight);
+        Article(int id);
         ~Article();
-        virtual void accept(Visitor& visitor) = 0;
+        void accept(Visitor& visitor);
 
 };  
 } // namespace Articles
