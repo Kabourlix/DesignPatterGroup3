@@ -11,11 +11,11 @@ CheckoutVisitor::~CheckoutVisitor(){
     //Nothing to do here
 }
 
-float CheckoutVisitor::weightVisit(const Fruit* fruit){
+float CheckoutVisitor::weightVisit(const Fruit* fruit) const{
     int weight = std::rand() % 10 + 1; //Random int between 1 and 10
     return weight*fruit->getPricePerKg();
 }
 
-float CheckoutVisitor::scanVisit(const Cake* cake){
+float CheckoutVisitor::scanVisit(const Cake* cake) const{
     return cake->getPrice();
 }

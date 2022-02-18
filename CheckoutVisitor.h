@@ -1,3 +1,6 @@
+#ifndef _CHECKOUTVISITOR
+#define _CHECKOUTVISITOR
+
 #include "Visitor.h"
 
 class CheckoutVisitor : public Visitor {
@@ -6,7 +9,9 @@ class CheckoutVisitor : public Visitor {
         //Inherited from Visitor
         CheckoutVisitor();
         virtual ~CheckoutVisitor();
-        virtual float weightVisit(const Fruit* fruit);
-        virtual float scanVisit(const Cake* cake);
+        virtual float weightVisit(const Fruit* fruit) const;
+        virtual float scanVisit(const Cake* cake) const;
 
 };
+
+#endif

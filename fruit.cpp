@@ -1,4 +1,5 @@
 #include "fruit.h"
+#include "Visitor.h"
 #include <iostream>
 
 Fruit::Fruit(float _pricePerKg, float _discount){
@@ -14,6 +15,7 @@ Fruit::~Fruit(){
 
 float Fruit::accept(const Visitor& v){
 	std::cout << "On appel le visiteur" <<std::endl;
+	return v.weightVisit(this);
 }
 
 inline float Fruit::getPricePerKg() const {
