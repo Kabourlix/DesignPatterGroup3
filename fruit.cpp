@@ -1,8 +1,8 @@
 #include "fruit.h"
 #include <iostream>
 
-Fruit::Fruit(float _priceperKG, float _discount){
-	priceperKG = _priceperKG;
+Fruit::Fruit(float _pricePerKg, float _discount){
+	pricePerKg = _pricePerKg;
 	discount = _discount;
 	std::cout << "Appel au constructeur de la classe Fruit - adresse de l'objet : " << this <<std::endl;
 }
@@ -14,4 +14,12 @@ Fruit::~Fruit(){
 
 float Fruit::accept(const Visitor& v){
 	std::cout << "On appel le visiteur" <<std::endl;
+}
+
+inline float Fruit::getPricePerKg() const {
+	return pricePerKg;
+}
+
+inline float Fruit::getDiscount() const {
+	return discount;
 }

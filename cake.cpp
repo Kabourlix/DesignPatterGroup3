@@ -15,3 +15,11 @@ Cake::~Cake(){
 float Cake::accept(const Visitor& v){
 	std::cout << "On appel le visiteur" <<std::endl;
 }
+
+inline float Cake::getPrice() const {
+	return price;
+}
+
+inline float Cake::getDiscount() const {
+	return discount;
+}

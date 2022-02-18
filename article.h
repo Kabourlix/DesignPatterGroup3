@@ -1,7 +1,7 @@
-#include "Visitor.h"
+#ifndef _ARTICLE
+#define _ARTICLE
 
-#ifndef ARTICLE
-#define ARTICLE
+class Visitor; 
 
 class Article {
 public:

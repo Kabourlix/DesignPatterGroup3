@@ -1,12 +1,12 @@
-#ifndef FRUIT
-#define FRUIT
+#ifndef _FRUIT
+#define _FRUIT
 
 #include "article.h"
 
 class Fruit : public Article {
 
 private :
-	float priceperKG;
+	float pricePerKg;
 	float discount;
 
 public:
@@ -14,6 +14,10 @@ public:
 	Fruit(float _priceperKG, float _discount);
 	~Fruit();
 	float accept(const Visitor& v);
+
+	inline float getPricePerKg() const;
+
+	inline float getDiscount() const; 
 };
 
 #endif

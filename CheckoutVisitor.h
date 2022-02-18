@@ -6,7 +6,7 @@ class CheckoutVisitor : public Visitor {
         //Inherited from Visitor
         CheckoutVisitor();
         virtual ~CheckoutVisitor();
-        virtual float weightVisit(Fruit* fruit);
-        virtual float scanVisit(Cake* cake);
+        virtual float weightVisit(const Fruit* fruit);
+        virtual float scanVisit(const Cake* cake);
 
 };

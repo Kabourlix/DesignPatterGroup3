@@ -13,6 +13,8 @@ public:
 	Cake(float _price, float _discount);
 	~Cake();
 	float accept(const Visitor& v);
+	inline float getPrice() const {return price;};
+	inline float getDiscount() const {return discount;};
 };
 
 #endif
