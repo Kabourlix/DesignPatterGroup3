@@ -14,7 +14,7 @@ Fruit::~Fruit(){
 
 
 float Fruit::accept(const Visitor& v){
-	std::cout << "On appel le visiteur" <<std::endl;
+	std::cout << "On appelle le visiteur" <<std::endl;
 	return v.weightVisit(this);
 }
 
