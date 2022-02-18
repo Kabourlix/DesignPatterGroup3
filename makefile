@@ -1,5 +1,5 @@
-main : CheckoutVisitor.o SubscribedCheckoutVisitor.o fruit.o cake.o
-	g++ -o main CheckoutVisitor.o SubscribedCheckoutVisitor.o fruit.o cake.o
+main : main.o CheckoutVisitor.o SubscribedCheckoutVisitor.o fruit.o cake.o
+	g++ -o main main.o CheckoutVisitor.o SubscribedCheckoutVisitor.o fruit.o cake.o
 
 main.o : main.cpp 
 	g++ -c main.cpp
