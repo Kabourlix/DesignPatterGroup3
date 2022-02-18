@@ -1,3 +1,6 @@
+#include "fruit.h"
+#include "cake.h"
+
 class Visitor
 {
     public :

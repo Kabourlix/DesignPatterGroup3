@@ -1,5 +1,6 @@
 #include "CheckoutVisitor.h"
 
+
 CheckoutVisitor::CheckoutVisitor(){
     //Nothing to do here
 }

@@ -1,3 +1,5 @@
+#include "Visitor.h"
+
 #ifndef ARTICLE
 #define ARTICLE
 
