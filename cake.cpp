@@ -1,5 +1,5 @@
 #include "cake.h"
-#include "visitor.h"
+#include "Visitor.h"
 #include <iostream>
 
 Cake::Cake(float _price, float _discount){
@@ -18,10 +18,3 @@ float Cake::accept(const Visitor& v){
 	return v.scanVisit(this);
 }
 
-inline float Cake::getPrice() const {
-	return price;
-}
-
-inline float Cake::getDiscount() const {
-	return discount;
-}

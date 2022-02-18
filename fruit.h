@@ -15,9 +15,13 @@ public:
 	~Fruit();
 	float accept(const Visitor& v);
 
-	inline float getPricePerKg() const;
+	inline float getPricePerKg() const{
+		return pricePerKg;
+	}
 
-	inline float getDiscount() const; 
+	inline float getDiscount() const{
+		return discount;
+	}
 };
 
 #endif

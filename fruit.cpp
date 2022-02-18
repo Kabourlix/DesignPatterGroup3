@@ -18,10 +18,3 @@ float Fruit::accept(const Visitor& v){
 	return v.weightVisit(this);
 }
 
-inline float Fruit::getPricePerKg() const {
-	return pricePerKg;
-}
-
-inline float Fruit::getDiscount() const {
-	return discount;
-}

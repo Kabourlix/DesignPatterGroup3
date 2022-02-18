@@ -1,8 +1,8 @@
 #include "Visitor.h"
 #include "CheckoutVisitor.h"
 #include "SubscribedCheckoutVisitor.h"
-#include "Fruit.h"
-#include "Cake.h"
+#include "fruit.h"
+#include "cake.h"
 
 #include <iostream>
 
