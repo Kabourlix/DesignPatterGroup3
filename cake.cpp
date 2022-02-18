@@ -1,7 +1,9 @@
 #include "cake.h"
 #include <iostream>
 
-Cake::Cake(){
+Cake::Cake(float _price, float _discount){
+	price = _price;
+	discount = _discount;
 	std::cout << "Appel au constructeur de la classe Cake - adresse de l'objet : " << this <<std::endl;
 }
 
