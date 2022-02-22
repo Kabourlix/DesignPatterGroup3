@@ -14,7 +14,7 @@ Cake::~Cake(){
 
 
 float Cake::accept(const Visitor& v){
-	std::cout << "On appelle le visiteur" <<std::endl;
+	// std::cout << "On appelle le visiteur" <<std::endl;
 	return v.scanVisit(this);
 }
 

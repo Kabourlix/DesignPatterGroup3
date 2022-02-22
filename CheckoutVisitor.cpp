@@ -12,7 +12,8 @@ CheckoutVisitor::~CheckoutVisitor(){
 }
 
 float CheckoutVisitor::weightVisit(const Fruit* fruit) const{
-    int weight = std::rand() % 10 + 1; //Random int between 1 and 10
+    //int weight = std::rand() % 10 + 1; //Random int between 1 and 10
+    int weight = 1;
     return weight*fruit->getPricePerKg();
 }
 
